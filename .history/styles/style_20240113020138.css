@@ -1,0 +1,232 @@
+/* G3 Architects website fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* all body measuring */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* container */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Primary button */
+.primary-btn{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 18px 23px;
+    border-radius: 8px;
+    background: #FF900E;
+    border: 1px solid #FF900E;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.primary-btn:hover{
+    background: #fff;
+    color: #FF900E;
+}
+/* Header part css style */
+#header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 0px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.website-logo{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.navigation > .nav{
+    display: flex;
+    gap: 30px;
+}
+.nav li{
+    list-style: none;
+} 
+.nav li a{
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+/* Navigation css hover style  */
+.nav li a:hover{
+    color: #FF900E;
+}
+/* banner section css style start */
+#banner{
+
+}
+#banner .banner-content{
+    max-width: 862px;
+    margin: 100px auto 50px auto;
+    text-align: center;
+}
+.banner-content .banner-title{
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-content .banner-description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 30px 0;
+}
+#banner img{
+    width: 100%;
+}
+/* banner section css style end */
+/* team section css style start */
+#team{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.team-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.team-content .team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 45%;
+}
+.team-content .team-img img{
+    width: 100%;
+}
+.team-content .team-text{
+    width: 49%;
+}
+.primary-title{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;  
+}
+#gray-font{
+    color: #727272;
+    font-weight: 500;
+}
+#yellow-font{
+    color: #FF900E;
+}
+.primary-description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+/* some-facts section css style */
+#some-facts{
+    margin-bottom: 180px;
+}
+.some-facts-container{
+    
+}
+.some-facts-text-content{
+    width: 542px;
+}
+.some-facts-card-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.some-facts-card-content .some-facts-card{
+    padding: 45px 36px 36px 45px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+}
+.some-facts-card img{
+    width: 46px;
+    height: 46px;
+}
+.some-facts-card .card-number{
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.some-facts-card .card-description{
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* mobile device */
+@media only screen and (max-width: 576px){
+    .navigation{
+        flex-direction: column;
+    }
+    #banner .banner-content {
+        max-width: 100%;
+        margin: 50px auto 50px auto;
+    }
+
+
+
+    .team-content{
+        flex-direction: column;
+    }
+    .team-content .team-img{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        width: 100%;
+    }
+    .team-content .team-text{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* tablet device */
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .navigation{
+        flex-direction: column;
+    }
+    #banner .banner-content {
+        max-width: 100%;
+        margin: 80px auto 50px auto;
+    }
+
+
+    .team-content{
+        flex-direction: column-reverse;
+    }
+    .team-content .team-img{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        width: 100%;
+    }
+    .team-content .team-text{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
