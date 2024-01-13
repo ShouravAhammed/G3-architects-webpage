@@ -309,6 +309,11 @@
         width: 100%;
         height: 100%;
     }
+    .ten-years-badge {
+        left: -30px;
+        bottom: 100px;
+    }
+
 
 
     .some-facts-text-content {
@@ -377,20 +382,6 @@
         gap: 24px;
         flex-wrap: wrap;
     }
-    
-
-
-    .feature-container {
-        flex-direction: column;
-    }
-    .feature-img img {
-        width: 100%;
-        height: 100%;
-    }
-
-
-
-
 
 
 
